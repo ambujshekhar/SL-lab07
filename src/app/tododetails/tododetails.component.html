@@ -1,0 +1,12 @@
+<h2>Todo Details</h2>
+
+<li *ngFor="let employee of employeeDetails">
+    <mat-card>
+        <mat-card-title> Name : {{employee.name}} </mat-card-title> 
+        <mat-card-subtitle>ID : {{employee.id}} </mat-card-subtitle>
+       <mat-card-content> Depatment : {{employee.department}}</mat-card-content>
+       <button mat-raised-button (click)="deleteEmployee()">
+       Delete 
+       </button>
+    </mat-card>
+</li>
